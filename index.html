@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    canvas.webgl {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    div.btns {
+      position: absolute;
+      z-index: 2;
+      display: none;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="btns">
+    <button id="prev-view">prev view</button>
+    <button id="next-view">next view</button>
+  </div>
+
+  <canvas class="webgl"></canvas>
+  <main>
+    <!-- Intro section/view -->
+    <div class="intro-container container">
+      <div class="intro">
+        <h1>
+          Hello!
+          <img src="https://bchiang7.github.io/img/emojis/wave.png" alt="hand-wave-emoji" height="35px" width="35px">
+        </h1>
+        <h2>
+          I'm <span>K.V.S.S.Harsha </span>
+        </h2>
+        <h3>
+          A SKILLED AND ATTENTIVE SOFTWARE ENGINEER WITH A STRONG FOUNDATION IN COMPUTER SCIENCE, EXPERIENCED IN <span>FULL-STACK DEVELOPMENT, MACHINE LEARNING</span> AND <span>CLOUD COMPUTING</span>.💻
+        </h3>
+      </div>
+    </div>
+
+    <!-- About container -->
+    <div class="about-container container">
+      <div class="about">
+        <h2>
+          Background 🌐
+        </h2>
+        <h4>
+          I have a solid educational background in Computer Science and Engineering and hands-on experience in <span>full-stack development using Java, machine learning, and cloud computing</span>. I have completed internships in <span>Full Stack Development (HMI)</span> and <span>Machine Learning (DATAPRO)</span>, where I worked on dynamic web applications and predictive ML models. Additionally.
+
+          I have also actively participated in hackathons, including <span>Smart India Hackathon (SIH)</span> and a college-level Java-based hackathon, where I contributed to solving real-world problems like government school dropout rates.
+        </h4>
+      </div>
+    </div>
+
+    <!-- Project container -->
+    <div class="project-container container">
+      <div class="projects">
+        <h2>
+          Projects 🏆
+        </h2>
+
+        <h4>
+          THIS IS THE LIST OF PROJECTS.
+          <ul>
+            <li>Student Management System (Full-Stack Java)</li>
+            <li>TO-DO list (HTML, CSS, javascript)</li>
+            <li>Weather Forecasting (Machine Learning)</li>
+            <li>Mobile Price Prediction (Machine Learning)</li>
+            <li>Pharmacy Management System (HTML, CSS, PHP)</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <!-- Skills container -->
+    <div class="skills-container container">
+      <div class="skills">
+        <h2>
+          Skills 🧠
+        </h2>
+
+        <h4>
+          THIS IS THE LIST OF SKILLS.
+          <ul>
+            <li>Programming Languages: C, Java, Python</li>
+            <li>Web Technologies: HTML, CSS, JavaScript, React, PHP</li>
+            <li>Database Management: MySQL</li>
+            <li>Tools & Technologies: Git, Gradio, XAMPP</li>
+            <li>Cloud & DevOps: AWS Cloud Computing</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <!-- Contact container -->
+    <div class="contact-container container">
+      <div class="contact">
+        <h2>
+          Contacts ☎️
+        </h2>
+
+        <h4>
+          <ul>
+            <li>Mobile NO : 6302702099 </li>
+            <li>Email : imharshak21@gmail.com </li>
+            <li><a href="https://www.linkedin.com/in/harsha-k-v-s-s-5912261a8/" target="_blank">My LinkedIn</a></li>
+            <li><a href="https://github.com/Harsha-k-21" target="_blank"> My GitHub</a></li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+  </main>
+
+ 
+
+  <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+          }
+        }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@VERSION"></script>
+  <script src="main1.js" type="module"></script>
+</body>
+
+</html>

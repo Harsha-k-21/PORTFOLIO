@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    background: black;
+    color: white;
+}
+
+/* Layout */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sections Styling */
+.intro, 
+.about,
+.projects,
+.skills,
+.contact {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: transparent; /* Fully transparent container */
+    backdrop-filter: blur(1em);
+    width: 50%;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 3em;
+    border: 2px solid white; /* White border for visibility */
+}
+
+/* Adjustments for specific sections */
+.intro, .skills {
+    margin-right: 50%;
+    margin-bottom: 10%;
+    width: 35%;
+}
+
+.contact, .about {
+    margin-left: 50%;
+    width: 35%;
+}
+
+/* Headings */
+.intro h2, .intro h3 {
+    margin-top: 1em;
+    font-weight: lighter;
+}
+
+/* Text Styling */
+span {
+    font-weight: 750;
+}
+
+h4 {
+    margin-top: 2em;
+    font-weight: lighter;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 1.7em;
+}
+
+/* General Font Size */
+* {
+    font-size: 21px;
+}
